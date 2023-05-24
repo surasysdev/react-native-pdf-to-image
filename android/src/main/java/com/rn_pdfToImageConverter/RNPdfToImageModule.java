@@ -41,7 +41,7 @@ public class RNPdfToImageModule extends ReactContextBaseJavaModule {
     try {
         WritableMap map = Arguments.createMap();
         WritableArray files = Arguments.createArray();
-        File file = new File(fileName);
+        File file = new File(pdfUriString);
         String fileName = file.getName();
         Uri path = Uri.fromFile(file);
 
